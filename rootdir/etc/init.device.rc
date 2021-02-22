@@ -1,16 +1,33 @@
 on init
     # Set Hardware properties
-    setprop ro.hardware.sensors james
-    setprop ro.hw.imager 8MP
+    setprop ro.hardware.sensors nora_8917
 
     # Variant properties
-on property:ro.boot.hardware.sku=XT1921-3
-    setprop ro.product.model XT1921-3
-    setprop ro.product.name james_t
+on property:ro.boot.hardware.sku=XT1944-3
+    setprop ro.product.model XT1944-3
+    setprop ro.product.name nora_row
     setprop ro.hw.ecompass false
     setprop ro.mot.sensors.chopchop false
     setprop ro.mot.sensors.camgest false
-    setprop ro.radio.imei.sv 9
+    setprop ro.radio.imei.sv 11
+    setprop persist.eab.supported 1
+    setprop persist.rcs.presence.provision 0
+    setprop persist.rcs.supported 1
+    setprop persist.radio.customer_mbns tmo_usa_ims_default.mbn
+    setprop persist.radio.data_con_rprt 1
+    setprop persist.vendor.ims.cam_sensor_delay 20
+    setprop persist.vendor.ims.display_delay 40
+    setprop persist.vendor.ims.playout_delay 10
+    setprop persist.vendor.radio.snapshot_enabled 1
+    setprop persist.vendor.radio.snapshot_timer 22
+
+on property:ro.boot.hardware.sku=XT1944-4
+    setprop ro.product.model XT1944-4
+    setprop ro.product.name nora
+    setprop ro.hw.ecompass false
+    setprop ro.mot.sensors.chopchop false
+    setprop ro.mot.sensors.camgest false
+    setprop ro.radio.imei.sv 12
     setprop persist.eab.supported 1
     setprop persist.rcs.presence.provision 0
     setprop persist.rcs.supported 1
