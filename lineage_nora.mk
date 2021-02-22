@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/motorola/james/device.mk)
+$(call inherit-product, device/motorola/nora/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -14,10 +14,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_james
-PRODUCT_DEVICE := james
+PRODUCT_NAME := lineage_nora
+PRODUCT_DEVICE := nora
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto e5 play
+PRODUCT_MODEL := moto e5
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
@@ -25,9 +25,9 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.name
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="james_a-user 8.0.0 OCPS27.91-157-20 22 release-keys" \
-    PRODUCT_NAME="james"
+    PRIVATE_BUILD_DESC="nora_row-user 8.0.0 OPPS27.91-176-11-16 20 release-keys" \
+    PRODUCT_NAME="nora"
 
-BUILD_FINGERPRINT := motorola/james_a/james:8.0.0/OCPS27.91-157-20/22:user/release-keys
+BUILD_FINGERPRINT := motorola/nora_row/nora_8917:8.0.0/OPPS27.91-176-11-16/20:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola

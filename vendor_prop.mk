@@ -16,7 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.sensors=james \
+    ro.hardware.sensors=nora \
     ro.vendor.sensors.amd=false \
     ro.vendor.sensors.gravity=false \
     ro.vendor.sensors.laccel=false
